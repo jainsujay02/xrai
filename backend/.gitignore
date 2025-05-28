@@ -1,0 +1,4 @@
+/uploads/*
+!/uploads/.leavemehere
+/data_entry.csv
+nohup.out

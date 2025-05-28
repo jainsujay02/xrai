@@ -1,0 +1,10 @@
+        time         |     patient_id     |       study_uid       |    body_part     | former_priority | new_priority |     study_date      | scan_type
+ 2025-05-20 22:32:59        SYN_0001            SYN_0001.dcm             Chest               5                1         2025-04-30 08:44:04     X-RAY  
+ 2025-05-20 22:35:38        SYN_0015            SYN_0015.dcm             Head                4                1         2025-04-30 08:44:04      CT    
+ 2025-05-28 13:35:38        pid_567             pid_567.jpg              chest               1                2         2025-05-28 11:25:21     X-RAY  
+ 2025-05-28 13:35:39        pid_567             pid_567.jpg              chest               2                3         2025-05-28 11:25:21     X-RAY  
+ 2025-05-28 13:35:39        pid_567             pid_567.jpg              chest               3                4         2025-05-28 11:25:21     X-RAY  
+ 2025-05-28 13:35:40        pid_567             pid_567.jpg              chest               4                5         2025-05-28 11:25:21     X-RAY  
+ 2025-05-28 13:35:41        pid_567             pid_567.jpg              chest               5                1         2025-05-28 11:25:21     X-RAY  
+ 2025-05-28 13:35:55        pid_567             pid_567.jpg              chest               1                2         2025-05-28 11:25:21     X-RAY  
+ 2025-05-28 13:35:56        pid_567             pid_567.jpg              chest               2                3         2025-05-28 11:25:21     X-RAY  

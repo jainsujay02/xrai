@@ -1,0 +1,78 @@
+.title {
+    font-size: calc(10px + 2vmin);
+    color: #242423;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.label {
+    color: #242423;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: calc(1px + 2vmin);
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 1200px;
+    height: 75vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.exit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.exit-button:hover {
+    background-color: rgba(255, 72, 72, 0.8);
+    color: #f9f9f9;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.exit-button:active {
+    background-color: rgba(255, 72, 72, 0.5);
+    color: #f9f9f9;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-button {
+    border-radius: 8px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: calc(1px + 2vmin);
+    padding: 4px;
+}
