@@ -3,7 +3,7 @@
 A lightweight, end-to-end demo that
 
 1. **Uploads** a chest X-ray + metadata (React *data-entry* form)
-2. **Scores & triages** the study with LLaVA-Rad + GPT-4o (Used for JSON parsing) (Python backend)
+2. **Scores & triages** the study with LLaVA-Rad (Python backend)
 3. **Displays** an auto-refreshing worklist (React *worklist* UI)
 
 Everything runs locally—no Docker, no database—via two shell scripts.
@@ -68,25 +68,12 @@ shutdown.sh             safe stop
 
 ---
 
-## Environment variables
-
-| Variable         | Required | Purpose                           |
-| ---------------- | -------- | --------------------------------- |
-| `OPENAI_API_KEY` | **✓**    | GPT-4o used by `triage_runner.py` |
-
-```bash
-export OPENAI_API_KEY="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-./setup.sh
-```
-
----
-
 ## Troubleshooting
 
 | Symptom                               | Fix                                                                                     |
 | ------------------------------------- | --------------------------------------------------------------------------------------- |
 | **Worklist stuck on “Loading…”**      | Check `.run/logs/backend.out` – Flask must be listening on **5050**.                    |
-| **Runner logs “parse\_error”**        | GPT occasionally returns non-JSON; row is skipped. Re-submit later.                     |
+| **Runner logs “parse\_error”**        | Model occasionally returns non-JSON; row is skipped. Re-submit later.                     |
 | **Ports busy after shutdown**         | `shutdown.sh` kills anything on 3000/4000/5050; if still busy, run `lsof -i :3000` etc. |
 | **Corrupted `data_entry.csv` header** | Delete the file (it will be recreated) or ensure the first line ends with `\n`.         |
 
@@ -95,7 +82,6 @@ export OPENAI_API_KEY="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ## Credits
 
 * **LLaVA-Rad** — Microsoft
-* **OpenAI GPT-4o** — triage scoring
 * React, Bootstrap, Day.js, React-Select
 
 ---
