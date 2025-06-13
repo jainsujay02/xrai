@@ -3,7 +3,7 @@
 A lightweight, end-to-end demo that
 
 1. **Uploads** a chest X-ray + metadata (React *data-entry* form)
-2. **Scores & triages** the study with LLaVA-Rad + GPT-4o (Python backend)
+2. **Scores & triages** the study with LLaVA-Rad + GPT-4o (Used for JSON parsing) (Python backend)
 3. **Displays** an auto-refreshing worklist (React *worklist* UI)
 
 Everything runs locally—no Docker, no database—via two shell scripts.
